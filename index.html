@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Song Player</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <nav>    
+        <div class="full-screen-container">
+            <div class="navbar">
+                <div class="logo">
+                    <img src="./logo.png" alt="Logo">
+                </div>
+                <div class="left-section">
+                    <input type="text" placeholder="Search...">
+                    <button class="navbar-button">Discover</button>
+                    <button class="navbar-button">Playlist</button>
+                </div>
+                <div class="right-section">
+                    <button class="navbar-button"><a href="signup.html">Sign Up</a></button>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="container_banner">
+        <div class="left-text">
+            <h2 class="heading">Break the silence, play the dhhunn....</h2>
+            <p class="subheading">When words become unclear, I shall focus with music.
+                When voice become inadequate, I shall be content with music.</p>
+            <div id="signup-container">
+                <!-- <a href="#" id="signup-button">Sign Up</a> -->
+            </div>
+        </div>
+        <div class="gallery">
+            <div class="box row-2" id="box-1"
+                style="background-image: url(./pexels-nothing-ahead-3423985.jpg);"></div>
+            <div class="box col-2" style="background-image: url(./f1.png);"></div>
+            <div class="box" style="background-image: url(./f2.png);"></div>
+            <div class="box row-2" style="background-image: url(./f3.png);"></div>
+            <div class="box col-2" style="background-image: url(./fhd.png);"></div>
+            <div class="box" style="background-image: url(./front\ page.jpg);"></div>
+            <div class="box col-2" style="background-image: url(./banner\ \(1\).png);"></div>
+        </div>
+    </div>
+          <div id="signup-container">
+              <h1>break the silence ,<br> play the DHHUNNN......</h1>
+              <p>Discover and enjoy the best music experience!</p>
+              <!-- <a href="#" id="signup-button">Sign Up</a> -->
+          </div>
+
+        <div class="banner2">
+
+            <h1>TOP ARTIST</h1>
+
+            <div class="artist-container">
+                <div class="artist">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3Kx9UogPCwRIvvuaeWtVN_d1LTnBUsRiGZA&usqp=CAU"
+                        alt="Artist 1">
+                    <div class="artist-name">Artist 1</div>
+                </div>
+                <div class="artist">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlHa6xSR8cx16B2ieW2lpfn556_p7R0dFfNMfNaOz5xWe6i8UjxmkJ2noEnjV_51bPkHo&usqp=CAU"
+                        alt="Artist 2">
+                    <div class="artist-name">Artist 1</div>
+                </div>
+                <div class="artist">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3Kx9UogPCwRIvvuaeWtVN_d1LTnBUsRiGZA&usqp=CAU"
+                        alt="Artist 3">
+                    <div class="artist-name">Artist 1</div>
+                </div>
+                <div class="artist">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3Kx9UogPCwRIvvuaeWtVN_d1LTnBUsRiGZA&usqp=CAU"
+                        alt="Artist 4">
+                    <div class="artist-name">Artist 1</div>
+                </div>
+                <div class="artist">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3Kx9UogPCwRIvvuaeWtVN_d1LTnBUsRiGZA&usqp=CAU"
+                        alt="Artist 5">
+                    <div class="artist-name">Artist 1</div>
+                </div>
+                
+               
+                </div>
+            </div>
+        </div>
+   
+  <div class="soundcontainer">
+    <h1>Song Player</h1>
+    <audio id="myAudio" controls>
+      Your browser does not support the audio element.
+    </audio>
+    <div class="controls">
+      <button id="prevBtn" onclick="playPrevious()">Previous</button>
+      <button id="playPauseBtn" onclick="togglePlayPause()">Play</button>
+      <button id="nextBtn" onclick="playNext()">Next</button>
+    </div>
+  </div>
+</header>
+  <main>
+    <div class="okcontainer">
+
+
+        <div class="content">
+
+            <div class="recently">
+
+                <h1>Recently Played</h1><br><br>
+                <div class="recently cont">
+
+                    <a onclick="playthis(0);" ondblclick="pauseSong()" class="song">
+                        <img src="https://bharatlyrics.com/wp-content/uploads/2021/02/barood-wargi.jpg">
+                    </a>
+                    <a onclick="playthis(1);" ondblclick="pauseSong()" class="song">
+                        <img src="https://c.saavncdn.com/554/Naagni-Haryanvi-2021-20210702222542-500x500.jpg">
+                    </a>
+                    <a onclick="playthis(2);" ondblclick="pauseSong()" class="song">
+                        <img src="https://static.toiimg.com/photo/msid-65159636/65159636.jpg">
+                    </a>
+                    <a onclick="playthis(3);" ondblclick="pauseSong()" class="song">
+                        <img src="https://www.ilyricshub.com/wp-content/uploads/2020/09/tu-aake-dekhle-king.jpg">
+                    </a>
+
+                    <a onclick="playthis(4);" ondblclick="pauseSong()" class="song">
+                        <img
+                            src="https://www.lyricsbull.com/wp-content/uploads/2020/12/jingle-bell-yo-yo-honey-singh.jpg">
+                    </a>
+                </div>
+            </div>
+            <div class="recently">
+
+                <h1>New Releases</h1><br><br>
+                <div class="recently cont">
+
+                    <a onclick="playthis(6);" ondblclick="pauseSong()" class="song">
+                        <img src="https://c.saavncdn.com/366/Baithe-Baithe-Hindi-2021-20210728105931-500x500.jpg">
+                    </a>
+                    <a onclick="playthis(7);" ondblclick="pauseSong()" class="song">
+                        <img
+                            src="https://i0.wp.com/99lyricstore.com/wp-content/uploads/2022/02/dhokha-lyrics-arijit-singh.jpg">
+                    </a>
+                    <a onclick="playthis(8);" ondblclick="pauseSong()" class="song">
+                        <img
+                            src="https://www.djsbuzz.in/wp-content/uploads/2022/02/nacho-nacho-rrr-remix-dj-purvish.jpg">
+                    </a>
+                    <a onclick="playthis(9);" ondblclick="pauseSong()" class="song">
+                        <img src="https://static.toiimg.com/photo/msid-86253410/86253410.jpg">
+                    </a>
+
+                    <a onclick="playthis(10);" ondblclick="pauseSong()" class="song">
+                        <img src="https://i.ytimg.com/vi/VYslt8bc-4Q/maxresdefault.jpg">
+                    </a>
+                    <br><br>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</main>
+<div class="aside-container">
+      <div class="playcontainer">
+        <div class="my-playlist">
+            <p>My Playlist</p>
+
+            <ul id="playlist"></ul>
+
+            <label for="songName">Song Name:</label>
+            <input type="text" id="songName">
+            <button  id="song" onclick="addSong()">Add Song</button>
+        </div>
+    </div>
+</div>
+<footer class="footer">
+    <div class="footer-container">
+        <div class="row">
+            <div class="footer-col">
+                <h4>TOP ARTIST</h4>
+                <ul>
+                    <li><a href="#">Lata Mangeshkar</a></li>
+                    <li><a href="#">Arijit Singh</a></li>
+                    <li><a href="#">Armaan Malik</a></li>
+                    <li><a href="#">Atif Aslam </a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>ARTIST ORIGINALS</h4>
+                <ul>
+                    <li><a href="#">Arijit - Channa Mereya</a></li>
+                    <li><a href="#">Atif - Dil Meri Na Sune</a></li>
+                    <li><a href="#">Armaan - Tere Mere</a></li>
+                    <li><a href="#">Raghav - Sufi</a></li>
+                    <li><a href="#">Siri - My Jam</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>DEVOTIONAL SONGS</h4>
+                <ul>
+                    <li><a href="#">Krishna Bhajan</a></li>
+                    <li><a href="#">Mata Ke Bhajan</a></li>
+                    <li><a href="#">Hanuman Chalisa</a></li>
+                    <li><a href="#">Mahadev</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>follow us</h4>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+  <script src="script.js"></script>
+</body>
+</html>
