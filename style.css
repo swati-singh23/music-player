@@ -213,6 +213,10 @@ header {
     transition: background-color 0.3s, color 0.3s;
 
 }
+#song:hover{
+    background-color: red;
+    color: white;
+}
 
 .song {
     display: flex;
@@ -235,6 +239,64 @@ header {
     color: white;
     background-color: #0d0c0c;
     border: 2px solid #f41111;
+}
+
+#remove {
+
+    padding: 12px 50px;
+    margin-right: 20px;
+    border-radius: 12px;
+    cursor: pointer;
+    color: white;
+    background-color: #000;
+    border: 2px solid red;
+    transition: background-color 0.3s, color 0.3s;
+
+
+}
+
+#remove:hover {
+
+    background-color: red;
+    color: white;
+
+}
+
+#up {
+
+    padding: 12px 50px;
+    margin-right: 20px;
+    border-radius: 12px;
+    cursor: pointer;
+    color: white;
+    background-color: #000;
+    border: 2px solid red;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+#up:hover {
+
+    background-color: red;
+    color: white;
+
+}
+#down {
+
+    padding: 12px 50px;
+    margin-right: 20px;
+    border-radius: 12px;
+    cursor: pointer;
+    color: white;
+    background-color: #000;
+    border: 2px solid red;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+#down:hover {
+
+    background-color: red;
+    color: white;
+
 }
 
 h1 {
@@ -591,7 +653,7 @@ ul {
 
 .footer-col .social-links a:hover {
     color: #24262b;
-    background-color: #ffffff;
+    background-color: #ca1c1c;
 }
   .footer-container {
     max-width: 1170px;

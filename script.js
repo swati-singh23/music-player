@@ -1,4 +1,4 @@
-function addSong() {
+ function addSong() {
   const playlist = document.getElementById('playlist');
   const songNameInput = document.getElementById('songName');
   const songName = songNameInput.value.trim();
@@ -9,9 +9,9 @@ function addSong() {
     li.innerHTML = `
       <span>${songName}</span>
       <div class="song-actions">
-        <button onclick="removeSong(this)">Remove</button>
-        <button onclick="moveUp(this)">Move Up</button>
-        <button onclick="moveDown(this)">Move Down</button>
+        <button  onclick="removeSong(this)"  id="remove">Remove</button>
+        <button  onclick="moveUp(this)" id="up" > Up</button>
+        <button  onclick="moveDown(this)"  id="down"> Down</button>
       </div>
     `;
     playlist.appendChild(li);
