@@ -3,8 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Song Player</title>
+  <link rel="stylesheet" type="text/css"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
   <link rel="stylesheet" href="style.css">
+  <title>Song Player</title>
+  
 </head>
 <body>
 
@@ -21,7 +23,7 @@
                     <button class="navbar-button">Playlist</button>
                 </div>
                 <div class="right-section">
-                    <button class="navbar-button"><a href="signup.html">Sign Up</a></button>
+                    <button class="navbar-button"><a href="" >Sign Up</a></button>
                 </div>
             </div>
         </div>
@@ -58,29 +60,29 @@
 
             <div class="artist-container">
                 <div class="artist">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3Kx9UogPCwRIvvuaeWtVN_d1LTnBUsRiGZA&usqp=CAU"
-                        alt="Artist 1">
-                    <div class="artist-name">Artist 1</div>
+                    <img src="./lata mangeshkar.jpg"
+                        alt="Lata Mangeshkar">
+                    <div class="artist-name">Lata Mangeshkar</div>
                 </div>
                 <div class="artist">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlHa6xSR8cx16B2ieW2lpfn556_p7R0dFfNMfNaOz5xWe6i8UjxmkJ2noEnjV_51bPkHo&usqp=CAU"
-                        alt="Artist 2">
-                    <div class="artist-name">Artist 1</div>
+                    <img src="./neha kakker.jpg"
+                        alt="Neha Kakkar">
+                    <div class="artist-name">Neha Kakkar</div>
                 </div>
                 <div class="artist">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3Kx9UogPCwRIvvuaeWtVN_d1LTnBUsRiGZA&usqp=CAU"
-                        alt="Artist 3">
-                    <div class="artist-name">Artist 1</div>
+                    <img src="./kishor kumar.jpg"
+                        alt="Kishore Kumar">
+                    <div class="artist-name">Kishore Kumar</div>
                 </div>
                 <div class="artist">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3Kx9UogPCwRIvvuaeWtVN_d1LTnBUsRiGZA&usqp=CAU"
-                        alt="Artist 4">
-                    <div class="artist-name">Artist 1</div>
+                    <img src="./arjit singh.jpg"
+                        alt="Arijit Singh">
+                    <div class="artist-name">Arijit Singh</div>
                 </div>
                 <div class="artist">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3Kx9UogPCwRIvvuaeWtVN_d1LTnBUsRiGZA&usqp=CAU"
-                        alt="Artist 5">
-                    <div class="artist-name">Artist 1</div>
+                    <img src="./alka yagni.jpg"
+                        alt="Alka Yagnik">
+                    <div class="artist-name">Alka Yagnik</div>
                 </div>
                 
                
@@ -88,17 +90,23 @@
             </div>
         </div>
    
-  <div class="soundcontainer">
-    <h1>Song Player</h1>
+<div class="soundcontainer">
+    <h1>Now Playing</h1>
+    <br>
+    <br>
     <audio id="myAudio" controls>
       Your browser does not support the audio element.
     </audio>
+    <br>
+    <br>
     <div class="controls">
+     <div class="playbutton">
       <button id="prevBtn" onclick="playPrevious()">Previous</button>
       <button id="playPauseBtn" onclick="togglePlayPause()">Play</button>
       <button id="nextBtn" onclick="playNext()">Next</button>
     </div>
-  </div>
+</div>
+  <!-- </div> -->
 </header>
   <main>
     <div class="okcontainer">
@@ -112,21 +120,22 @@
                 <div class="recently cont">
 
                     <a onclick="playthis(0);" ondblclick="pauseSong()" class="song">
-                        <img src="https://bharatlyrics.com/wp-content/uploads/2021/02/barood-wargi.jpg">
+                        <img src="https://pagalworld.com.pe/siteuploads/thumb/sft134/66885_4.jpg">
+                        
                     </a>
                     <a onclick="playthis(1);" ondblclick="pauseSong()" class="song">
-                        <img src="https://c.saavncdn.com/554/Naagni-Haryanvi-2021-20210702222542-500x500.jpg">
+                        <img src="	https://pagalworld.com.pe/siteuploads/thumb/sft7/3198_4.jpg">
                     </a>
                     <a onclick="playthis(2);" ondblclick="pauseSong()" class="song">
-                        <img src="https://static.toiimg.com/photo/msid-65159636/65159636.jpg">
+                        <img src="https://pagalworld.com.pe/siteuploads/thumb/sft135/67444_4.jpg">
                     </a>
                     <a onclick="playthis(3);" ondblclick="pauseSong()" class="song">
-                        <img src="https://www.ilyricshub.com/wp-content/uploads/2020/09/tu-aake-dekhle-king.jpg">
+                        <img src="	https://pagalworld.com.pe/siteuploads/thumb/sft137/68176_4.jpg">
                     </a>
 
                     <a onclick="playthis(4);" ondblclick="pauseSong()" class="song">
                         <img
-                            src="https://www.lyricsbull.com/wp-content/uploads/2020/12/jingle-bell-yo-yo-honey-singh.jpg">
+                            src="https://pagalworld.com.pe/siteuploads/thumb/sft131/65497_4.jpg">
                     </a>
                 </div>
             </div>
@@ -136,22 +145,23 @@
                 <div class="recently cont">
 
                     <a onclick="playthis(6);" ondblclick="pauseSong()" class="song">
-                        <img src="https://c.saavncdn.com/366/Baithe-Baithe-Hindi-2021-20210728105931-500x500.jpg">
+                        <img src="https://c.saavncdn.com/707/Ghodey-Pe-Sawaar-From-Qala-Hindi-2022-20221116123839-500x500.jpg">
                     </a>
                     <a onclick="playthis(7);" ondblclick="pauseSong()" class="song">
                         <img
-                            src="https://i0.wp.com/99lyricstore.com/wp-content/uploads/2022/02/dhokha-lyrics-arijit-singh.jpg">
+                            src="https://pagalworld.com.pe/siteuploads/thumb/sft9/4213_4.jpg">
                     </a>
                     <a onclick="playthis(8);" ondblclick="pauseSong()" class="song">
                         <img
                             src="https://www.djsbuzz.in/wp-content/uploads/2022/02/nacho-nacho-rrr-remix-dj-purvish.jpg">
                     </a>
                     <a onclick="playthis(9);" ondblclick="pauseSong()" class="song">
-                        <img src="https://static.toiimg.com/photo/msid-86253410/86253410.jpg">
+                        <img src="https://pagalworld.com.pe/siteuploads/thumb/sft135/67066_4.jpg">
+                        
                     </a>
 
-                    <a onclick="playthis(10);" ondblclick="pauseSong()" class="song">
-                        <img src="https://i.ytimg.com/vi/VYslt8bc-4Q/maxresdefault.jpg">
+                    <a onclick="playthis(10);" ondblclick="pauseSong()" clattpss="song">
+                        <img src="https://pagalfree.com/images/128Mitwa%20-%20Lagaan%20128%20Kbps.jpg">
                     </a>
                     <br><br>
                 </div>
@@ -163,12 +173,14 @@
 <div class="aside-container">
       <div class="playcontainer">
         <div class="my-playlist">
-            <p>My Playlist</p>
+            <h1>My Playlist</h1>
 
             <ul id="playlist"></ul>
+            <br>
 
-            <label for="songName">Song Name:</label>
-            <input type="text" id="songName">
+            <label for="songName"><h2>Song Name:</h2></label>
+            <br>
+            <input type="text" id="songName" placeholder="Music">
             <button  id="song" onclick="addSong()">Add Song</button>
         </div>
     </div>
