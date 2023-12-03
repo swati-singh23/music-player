@@ -49,7 +49,7 @@ var playPauseBtn = document.getElementById("playPauseBtn");
 var prevBtn = document.getElementById("prevBtn");
 var nextBtn = document.getElementById("nextBtn");
 
-var songs = ["song1.mp3", "song2.mp3", "song3.mp3"];
+var songs = ["song1.mp3", "song2.mp3", "song3.mp3","song4.mp3", "song5.mp3", "song6.mp3","song7.mp3", "song8.mp3", "song9.mp3","song10.mp3"];
 var currentSongIndex = 0;
 
 function togglePlayPause() {
@@ -80,3 +80,4 @@ function loadAndPlayCurrentSong() {
 
 // Load and play the first song
 loadAndPlayCurrentSong();
+
