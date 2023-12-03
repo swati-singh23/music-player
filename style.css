@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,400;6..96,900&display=swap');
-
+  
 * {
     margin: 0px;
     padding: 0px;
@@ -193,7 +193,7 @@ header {
     width: 100%;
     height: fit-content;
     margin: 20px;
-    padding: 20px;
+    padding: 10px;
     color: #ba1717;
     background-color: #000000;
 }
@@ -208,7 +208,7 @@ header {
     border-radius: 12px;
     cursor: pointer;
     color: white;
-    background-color: #000;
+    background-color: #0c0b0b;
     border: 2px solid red;
     transition: background-color 0.3s, color 0.3s;
 
@@ -226,11 +226,22 @@ header {
     display: flex;
     gap: 10px;
 }
+#songName{
+    padding: 12px 60px;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 12px;
+    margin-right: 60px;
+    color: white;
+    background-color: #0d0c0c;
+    border: 2px solid #f41111;
+}
 
 h1 {
     margin-top: 20px;
     color: #f41111;
     line-height: 2rem;
+    margin-left: 10px;
 }
 .banner2{
     background-color: #000;
@@ -436,6 +447,70 @@ h1 {
   .playing {
     text-align: center;
   }
+ .playbutton{
+    padding: 12px 50px;
+    margin-right: 20px;
+    /* border-radius: 12px;
+    cursor: pointer;
+    color: white;
+    background-color: #000;
+    border: 2px solid red;
+    transition: background-color 0.3s, color 0.3s; */
+ }
+
+ #prevBtn{
+    padding: 12px 50px;
+    margin-right: 20px;
+    border-radius: 12px;
+    cursor: pointer;
+    color: white;
+    background-color: #000;
+    border: 2px solid red;
+    transition: background-color 0.3s, color 0.3s;
+ }
+ #prevBtn:hover {
+
+    background-color: red;
+    color: white;
+
+}
+
+#playPauseBtn{
+    padding: 12px 50px;
+    margin-right: 20px;
+    border-radius: 12px;
+    cursor: pointer;
+    color: white;
+    background-color: #000;
+    border: 2px solid red;
+    transition: background-color 0.3s, color 0.3s;
+ }
+ #playPauseBtn:hover {
+
+    background-color: red;
+    color: white;
+
+}
+
+#nextBtn{
+    padding: 12px 50px;
+    margin-right: 20px;
+    border-radius: 12px;
+    cursor: pointer;
+    color: white;
+    background-color: #000;
+    border: 2px solid red;
+    transition: background-color 0.3s, color 0.3s;
+ }
+ #nextBtn:hover {
+
+    background-color: red;
+    color: white;
+
+}
+#myAudio{
+    background-color: #ac1a1a;
+}
 
   .footer-container {
     max-width: 1170px;
@@ -524,4 +599,5 @@ ul {
   }
   .soundcontainer {
     text-align: center;
+    margin-top: 10px;
   }
